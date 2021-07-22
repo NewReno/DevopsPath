@@ -1,0 +1,17 @@
+# change directory to codebase
+$ cd /file/path/to/code
+
+# make directory a git repository
+$ git init
+
+# add git file or directory
+$ git add <file or directory name>
+
+# Commit changes to head (but not yet to the remote repository):
+git commit -m "Commit message"
+
+# Commit any files you've added with git add, and also commit any files you've changed since then:
+git commit -a
+
+# Send changes to the master branch of your remote repository:	
+git push origin master
