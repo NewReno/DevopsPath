@@ -1,3 +1,6 @@
+Day 1
+Learning Git
+
 # change directory to codebase
 $ cd /file/path/to/code
 
