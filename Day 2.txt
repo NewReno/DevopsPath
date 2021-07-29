@@ -1,0 +1,22 @@
+Bash
+
+#print working directory
+pwd
+
+#change directory
+cd
+#level up
+cd ..
+
+#list file
+ls
+ls docs/s*
+ls docs/*.jpg
+
+
+#make directory
+mkdir
+
+#to create multiple levels of directories (e.g. mkdir -p dir1/dir2/dir3)
+mkdir -p 
+
