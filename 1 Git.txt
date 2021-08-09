@@ -4,6 +4,9 @@ Learning Git
 # change directory to codebase
 $ cd /file/path/to/code
 
+#change disk in windows
+ cd /D
+
 # make directory a git repository
 $ git init
 
@@ -18,3 +21,5 @@ git commit -a
 
 # Send changes to the master branch of your remote repository:	
 git push origin master
+
+ssh-keygen -t rsa -b 4096 -C "mail@mail.com"
