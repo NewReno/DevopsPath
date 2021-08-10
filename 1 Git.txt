@@ -1,6 +1,3 @@
-Day 1
-Learning Git
-
 # change directory to codebase
 $ cd /file/path/to/code
 
@@ -11,7 +8,7 @@ $ cd /file/path/to/code
 $ git init
 
 # add git file or directory
-$ git add <file or directory name>
+git add <file or directory name>
 
 # Commit changes to head (but not yet to the remote repository):
 git commit -m "Commit message"
@@ -23,7 +20,7 @@ git commit -a
 git remote -v
 
 #add new remote
-$git remote add origin ssh://git@example.com:1234/myRepo.git
+git remote add origin ssh://git@example.com:1234/myRepo.git
 
 #if you're updating to use HTTPS, your URL might look like:
 #https://github.com/USERNAME/REPOSITORY.git
@@ -39,4 +36,8 @@ git remote set-url origin git@github.com:USERNAME/REPOSITORY.git
 # Send changes to the master branch of your remote repository:	
 git push origin master
 
+#login github
+ssh -T git@github.com
+
+#keygen SSH keys
 ssh-keygen -t rsa -b 4096 -C "mail@mail.com"

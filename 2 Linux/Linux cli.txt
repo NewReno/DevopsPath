@@ -1,10 +1,12 @@
-Bash
-
 #print working directory
 pwd
 
+#clear console
+clear
+
 #change directory
 cd
+
 #level up
 cd ..
 
@@ -19,3 +21,11 @@ mkdir
 #to create multiple levels of directories (e.g. mkdir -p dir1/dir2/dir3)
 mkdir -p 
 
+#create file
+touch file.py
+
+#remove file
+rm file.py
+
+#remove directory (--force --recursive)
+rm -rf
