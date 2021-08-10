@@ -19,6 +19,25 @@ git commit -m "Commit message"
 # Commit any files you've added with git add, and also commit any files you've changed since then:
 git commit -a
 
+#check origin install
+git remote -v
+
+$git remote -v
+myOrigin ssh://git@example.com:1234/myRepo.git (fetch)
+myOrigin ssh://git@example.com:1234/myRepo.git (push)
+
+# doesnt work bcs origin doesnt exist
+$git push origin master
+
+# need to use
+$git push myOrigin master
+
+#remove old 
+$git remote remove myOrigin
+
+#add new remote
+$git remote add origin ssh://git@example.com:1234/myRepo.git
+
 # Send changes to the master branch of your remote repository:	
 git push origin master
 
