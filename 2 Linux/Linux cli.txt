@@ -13,7 +13,6 @@ ls
 ls docs/s*
 ls docs/*.jpg
 
-
 #make directory
 mkdir
 
