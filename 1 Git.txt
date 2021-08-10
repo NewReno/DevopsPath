@@ -19,24 +19,22 @@ git commit -m "Commit message"
 # Commit any files you've added with git add, and also commit any files you've changed since then:
 git commit -a
 
-#check origin install
+#verify new remote
 git remote -v
-
-$git remote -v
-myOrigin ssh://git@example.com:1234/myRepo.git (fetch)
-myOrigin ssh://git@example.com:1234/myRepo.git (push)
-
-# doesnt work bcs origin doesnt exist
-$git push origin master
-
-# need to use
-$git push myOrigin master
-
-#remove old 
-$git remote remove myOrigin
 
 #add new remote
 $git remote add origin ssh://git@example.com:1234/myRepo.git
+
+#if you're updating to use HTTPS, your URL might look like:
+#https://github.com/USERNAME/REPOSITORY.git
+#If you're updating to use SSH, your URL might look like:
+#git@github.com:USERNAME/REPOSITORY.git
+
+#Switching remote URLs from SSH to HTTPS
+git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
+
+#Switching remote URLs from HTTPS to SSH
+git remote set-url origin git@github.com:USERNAME/REPOSITORY.git
 
 # Send changes to the master branch of your remote repository:	
 git push origin master
