@@ -2,5 +2,5 @@
 ***
 ### 1. Git
 ### 2. Linux
-    * Command line
 ### 3. Docker
+### 4. DB

@@ -29,3 +29,21 @@ rm file.py
 
 #remove directory (--force --recursive)
 rm -rf
+
+#displays network connections
+netstat -plutn
+
+#add ruleto firewall list
+sudo firewall-cmd --zone=public --add-port=8000/tcp
+
+#add permanent rule
+firewall-cmd --permanent --add-port=22/tcp
+
+#show process
+ps -aux | grep *name*
+
+#add user
+adduser *username*
+
+#add user in sudo group
+usermod -aG sudo *username*
