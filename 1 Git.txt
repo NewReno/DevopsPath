@@ -10,6 +10,9 @@ $ git init
 # add git file or directory
 git add <file or directory name>
 
+#add all
+git add .
+
 # Commit changes to head (but not yet to the remote repository):
 git commit -m "Commit message"
 

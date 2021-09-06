@@ -47,3 +47,8 @@ adduser *username*
 
 #add user in sudo group
 usermod -aG sudo *username*
+
+#to add permissions.
+#rwx - read write execute
+# -R - recursive
+chmod -R +rwx *filename/directory*

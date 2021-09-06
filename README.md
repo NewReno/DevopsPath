@@ -3,4 +3,5 @@
 ### 1. Git
 ### 2. Linux
 ### 3. Docker
-### 4. DB
+### 4. Django
+### 4. Highload
