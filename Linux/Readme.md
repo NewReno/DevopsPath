@@ -69,9 +69,7 @@ adduser *username*
 ```
 usermod -aG sudo *username*
 ```
-# to add permissions.
-rwx - read write execute  
- -R - recursive
+# to add permissions(rwx - read write execute   -R - recursive )
 ```
 chmod -R +rwx *filename/directory*
 ```
