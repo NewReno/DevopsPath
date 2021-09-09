@@ -42,10 +42,10 @@ git remote -v
 git remote add origin ssh://git@example.com:1234/myRepo.git
 ```
 
-#### if you're updating to use HTTPS, your URL might look like:
-#### https[]()://github.com/USERNAME/REPOSITORY.git  
-#### If you're updating to use SSH, your URL might look like:
-#### git[]()@github.com:USERNAME/REPOSITORY.git
+if you're updating to use HTTPS, your URL might look like:
+https[]()://github.com/USERNAME/REPOSITORY.git  
+If you're updating to use SSH, your URL might look like:
+git[]()@github.com:USERNAME/REPOSITORY.git
 
 
 ### Switching remote URLs from SSH to HTTPS
