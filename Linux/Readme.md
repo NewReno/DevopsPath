@@ -50,12 +50,12 @@ netstat -plutn
 ```
 # add ruleto firewall list
 ```
-sudo firewall-cmd --zone=public --add-port=8000/tcp
+sudo firewall-cmd --zone=public --add-port=3000/tcp
 ```
 
 # add permanent rule
 ```
-firewall-cmd --permanent --add-port=22/tcp
+firewall-cmd --permanent --add-port=3000/tcp
 ```
 # show process
 ```
