@@ -95,3 +95,8 @@ git remote add origin git@github.com:"login"/"repository name".git
 git branch -M main
 git push -u origin main
 ```
+
+### remove file (-r recursive for folders)
+```
+git rm <file>
+```

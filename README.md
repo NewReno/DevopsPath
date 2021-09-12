@@ -7,6 +7,7 @@
 * Commands
 * Courses
 ## DB
-## Django
+## Coding
+* Django
+* Python
 ## AWS
-## Python
