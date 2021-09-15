@@ -73,3 +73,31 @@ usermod -aG sudo *username*
 ```
 chmod -R +rwx *filename/directory*
 ```
+
+Запустить службу. После внедрения systemd постоянно путался и сначала писал имя службы, а потом команду start. Сейчас уже переучился. 
+systemctl start mysql
+
+Добавить в автозагрузку:
+systemctl enable nginx
+
+Добавить сервис в автозагрузку и сразу запустить. Заменяет две предыдущие команды. Я не так давно узнал и стал использовать именно объединённую команду:
+systemctl enable --now mariadb
+
+Перечитать настройки служб. Обязательно нужно выполнить после того, как изменили какие-то настройки юнитов systemd.
+systemctl daemon-reload
+
+Список всех unit-files, а так же их состояний:
+systemctl list-unit-files
+Список выше можно ограничить по типам:
+systemctl -t service
+systemctl -t timer
+systemctl -t mount
+
+Посмотреть статус конкретной службы:
+systemctl | grep ssh
+
+Проверить статус автозапуска:
+systemctl is-enabled nginx
+
+Посмотреть конфигурацию юнита:
+systemctl cat sshd
