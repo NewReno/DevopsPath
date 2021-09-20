@@ -39,24 +39,9 @@ Docker pull *name image*
 ### Build image
 ```
 docker build .
-```
-
-```
-docker image ls
-```
-
-```
+docker images
 docker run IMAGE_ID
-```
-
-```
 docker ps -a
-```
-
-```
 docker stop CONTAINER_ID
-```
-
-```
 docker run -p -d 3000:3000 IMAGE_ID
 ```
