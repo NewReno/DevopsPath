@@ -59,7 +59,9 @@ firewall-cmd --permanent --add-port=3000/tcp
 ```
 # show process
 ```
+ps -ef
 ps -aux | grep *name*
+ps -aef fww
 ```
 # add user
 ```
@@ -74,8 +76,9 @@ usermod -aG sudo *username*
 chmod -R +rwx *filename/directory*
 ```
 
-Запустить службу. После внедрения systemd постоянно путался и сначала писал имя службы, а потом команду start. Сейчас уже переучился. 
+``` 
 systemctl start mysql
+```
 
 Добавить в автозагрузку:
 systemctl enable nginx
