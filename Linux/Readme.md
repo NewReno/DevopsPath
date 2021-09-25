@@ -76,31 +76,29 @@ usermod -aG sudo *username*
 chmod -R +rwx *filename/directory*
 ```
 
+# Start app
 ``` 
-systemctl start mysql
+systemctl start docker
 ```
 
-Добавить в автозагрузку:
+# Enable autostart
+```
 systemctl enable nginx
-
-Добавить сервис в автозагрузку и сразу запустить. Заменяет две предыдущие команды. Я не так давно узнал и стал использовать именно объединённую команду:
+```
+# Enable & start
+```
 systemctl enable --now mariadb
+```
 
-Перечитать настройки служб. Обязательно нужно выполнить после того, как изменили какие-то настройки юнитов systemd.
+# ReRead deamon setting after shange settings of systemd
+```
 systemctl daemon-reload
-
-Список всех unit-files, а так же их состояний:
-systemctl list-unit-files
-Список выше можно ограничить по типам:
-systemctl -t service
-systemctl -t timer
-systemctl -t mount
-
-Посмотреть статус конкретной службы:
+```
+# Deamon status
 systemctl | grep ssh
 
-Проверить статус автозапуска:
+# Deamon autostart status
 systemctl is-enabled nginx
 
-Посмотреть конфигурацию юнита:
+# Deamon settings
 systemctl cat sshd

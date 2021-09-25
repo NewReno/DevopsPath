@@ -1,0 +1,25 @@
+version: '3'
+services:
+
+nginx:
+  image: nginx:alpine
+  container_name: nginx
+  restart: unless-stopped
+  ports:
+    - "8000:8000"
+  networks:
+    - app-network
+
+database:
+  image: postgres:13.4
+  container_name: database
+  restart: unless-stopped
+  networks:
+    - app-network
+  volumes:
+    - pgdata:/var/lib/postgresql/data
+
+  web:
+   build: ./Dockerfile
+   image: web:1
+   command: bash -c "python3 manage.py makemigrations && python3 manage.py migrate && python3 manage.py runserver 0.0.0.0:8000"    
