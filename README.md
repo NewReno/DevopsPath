@@ -1,6 +1,5 @@
-<<<<<<< HEAD
 # DevopsPath
-=======
+
 # This is my Devops-Ninja way =)
 ***
 1. Инструменты автоматизации: Ansible
@@ -13,5 +12,4 @@
 8. Системы безопасности: Nginx, SSL, Firewall.
 9. Системы логирования: ELK Stack, Graylog.
 10. Системы управления секретами: Vault
-11. Языки программирования: Bash, Python
->>>>>>> master
+
