@@ -1,13 +1,4 @@
 # Git
-### Change directory to codebase
-```
-$ cd /file/path/to/code
-```
-
-### Change disk in winOS
-```
- cd /D
- ```
 
 ### Make directory a git repository
 ```
